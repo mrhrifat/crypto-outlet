@@ -1,6 +1,12 @@
+import { BrowserRouter } from 'react-router-dom'
+import Root from "./Root";
+
 function App() {
   return (
-    <div className="App">
+    <div>
+      <BrowserRouter>
+        <Root />
+      </BrowserRouter>
     </div>
   );
 }
