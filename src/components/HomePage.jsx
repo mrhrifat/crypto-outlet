@@ -57,7 +57,7 @@ const HomePage = () => {
                     </Link>
                 </Title>
             </div>
-            <News simplifiled />
+            <News simplified />
         </>
     )
 }
