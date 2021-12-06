@@ -3,6 +3,7 @@ import { Select, Typography, Row, Col, Avatar, Card } from 'antd'
 import moment from 'moment'
 import { useGetCryptoNewsQuery } from '../services/cryptoNewsApi'
 import { useGetCryptosQuery } from '../services/cryptoApi';
+import Loader from './Loader';
 const { Text, Title } = Typography;
 const { Option } = Select;
 const demoImage = 'https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News'
@@ -14,7 +15,7 @@ const News = ({ simplified }) => {
         { newsCategory, count: simplified ? 6 : 20 }
     )
     // console.log(cryptoNews);
-    if (!cryptoNews?.value) return 'Loading...'
+    if (!cryptoNews?.value) return <Loader/>
 
     return (
         <Row gutter={[24, 24]}>
