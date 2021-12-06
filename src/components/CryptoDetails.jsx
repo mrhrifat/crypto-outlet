@@ -64,7 +64,7 @@ const CryptoDetails = () => {
                 )}
             </Select>
 
-            {/* <LineChart coinHistory={coinHistory} currentPrice={cryptoDetails?.price} coinName={cryptoDetails?.name} /> */}
+            <LineChart coinHistory={coinHistory} currentPrice={cryptoDetails?.price} coinName={cryptoDetails?.name} />
 
             <Col className='stats-container'>
                 <Col className='coin-value-statistics'>
