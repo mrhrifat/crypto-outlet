@@ -79,6 +79,12 @@ a:hover {
     align-items: center;
 }
 
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+}
+
 @media screen and (max-width:1300px) {
     .main {
         margin-left: 50px;
