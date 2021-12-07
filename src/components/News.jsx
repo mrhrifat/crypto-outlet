@@ -9,13 +9,13 @@ const { Option } = Select;
 const demoImage = 'https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News'
 
 const News = ({ simplified }) => {
-    const [ newsCategory, setNewsCategory ] = useState('Cryptocurrency')
+    const [newsCategory, setNewsCategory] = useState('Cryptocurrency')
     const { data } = useGetCryptosQuery(100)
     const { data: cryptoNews } = useGetCryptoNewsQuery(
         { newsCategory, count: simplified ? 6 : 20 }
     )
     // console.log(cryptoNews);
-    if (!cryptoNews?.value) return <Loader/>
+    if (!cryptoNews?.value) return <Loader />
 
     return (
         <Row gutter={[24, 24]}>
@@ -36,18 +36,20 @@ const News = ({ simplified }) => {
                     </Select>
                 </Col>
             )}
-            {cryptoNews.value.map((news, i) => (
+            {cryptoNews?.value.map((news, i) => (
                 <Col
                     xs={24}
                     sm={12}
                     lg={8}
-                    key={i}
+
                 >
-                    <Card className='news-card' hoverable>
+                    <Card key={i} className='news-card' hoverable>
                         <a href={news.url} target='_blank' rel='norefferer'>
                             <div className='news-image-container'>
                                 <Title className='news-title' level={4}>
-                                    {news.name > 15 ? `${news.name.substring(0, 15)}...` : news.name}
+                                    {/* {console.log(news.name)} */}
+                                    {/* {console.log(news?.name.length > 15 ? `${news.name.substring(0, 15)}...` : news.name)} */}
+                                    { news.name > 15 ? `${news.name.substring(0, 15)}...` : news.name}
                                 </Title>
                                 <img
                                     src={news?.image?.thumbnail?.contentUrl || demoImage}
