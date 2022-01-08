@@ -28,4 +28,4 @@ I will be open to any contribution. If you have any idea, please let me know. I 
 
 
 ## License
-This project is licensed under [GPL-3.0](https://github.com/mrhrifat/crypto-outelet/blob/master/LICENSE.md).
+This project is licensed under [GPL-3.0](https://github.com/mrhrifat/crypto-outlet/blob/master/LICENSE.md).
