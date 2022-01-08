@@ -1,34 +1,31 @@
-### Cyrpto Outlet
-Cypto Outlet is a React Application that provides a platform for know crypto currencies, crypto exchanges and crypto news. 
-
-### Technologies Used
-1. Programming Language & Others
-    - HTML
-    - CSS
-    - JavaScript
-    - ReactJS
-    - Redux
-2. Tools & Libraries
-    - Ant Design
-    - Axios
-    - Chart.js
-    - Millify
-    - Moment.js
-3. API
-    - Coin Raking
-    - Bing News Search
-
-### Features
-- Crypto Currencies
-- Crypto Exchanges
-- Crypto News
-
-### How To Contribute
-You're always welcome to contribute to this project. If you want to contribute, please contact me at [
-- Fork the repository
-- Create a new branch
-- Commit your changes
-- Open a pull request
-- Wait for the pull request to be accepted
+## Cyrpto Outlet
+Cypto Outlet is a React Application that provides a platform for know Cryptocurrencies, Cryptocurrencies exchanges and Cryptocurrencies news. This application is built with ReactJS.
 
 
+## Features
+- Top 100 Cryptocurrencies
+- Cryptocurrencies  Details
+- Cryptocurrencies Exchanges
+- Cryptocurrencies News
+
+## Demo
+- Live
+    - [Crypto Outlet](https://cryptooutlet.netlify.app)
+ 
+**Note:** This is an multi-page application & available on server. That's why I didn't provide images demo for this project.
+
+
+## How To Contribute
+I will be open to any contribution. If you have any idea, please let me know. I will be happy to help you.
+1. Fork this repository
+2. Clone on your local environment with IDE.
+3. Makes your changes to code.
+4. Commit your changes.
+5. Create a new pull request
+6. Wait for the pull request to be merged.
+
+**Note:** If you want to do a major changes than first create an Issue.
+
+
+## License
+This project is licensed under [GPL-3.0](https://github.com/mrhrifat/crypto-outelet/blob/master/LICENSE.md).
